@@ -44,7 +44,6 @@ Requirements:
 - Python 3.8+ (Tkinter should be included with standard Python installs)
 
 Run the GUI (PowerShell):
-
 ```powershell
 python "v:\\Ceasar-Cipher-Project\\gui.py"
 ```
@@ -75,74 +74,4 @@ Examples (entered into the GUI):
 - The GUI (`gui.py`) was updated to include the new ciphers and shows contextual key instructions.
 - The project uses only the Python standard library; no extra install is required.
 
-## Contributing
 
-Contributions welcome. Good starter tasks:
-
-- Add tests for existing ciphers (unit tests for encrypt/decrypt roundtrips)
-- Add more ciphers or improve parameter validation and edge-case handling
-- Improve GUI (examples panel, file import/export, copy/paste shortcuts)
-
----
-
-Last updated: November 2025
-# Classic Ciphers Project
-
-Collection of classical cipher implementations with a simple GUI interface.
-
-## Features
-
-- Modular cipher implementations in the `ciphers` package:
-  - **Caesar cipher** (`caesar.py`) - Shift cipher with integer key
-  - **Vigenere cipher** (`vigenere.py`) - Polyalphabetic substitution with keyword
-  - **Hill cipher** (`hill.py`) - 2x2 matrix-based encryption
-  - **Playfair cipher** (`playfair.py`) - 5x5 matrix digraph substitution
-- Interactive Tkinter GUI (`gui.py`) to try all ciphers
-- Pure Python implementation, requires only standard library
-
-## Structure
-
-```
-Ceasar-Cipher-Project/
-├── ciphers/               # Cipher implementations
-│   ├── __init__.py       # Package initialization
-│   ├── caesar.py         # Caesar shift cipher
-│   ├── hill.py           # Hill cipher (2x2 matrix)
-│   ├── playfair.py       # Playfair cipher
-│   └── vigenere.py       # Vigenere cipher
-├── gui.py                # Tkinter GUI interface
-├── GUI_README.md         # Detailed GUI usage guide
-└── README.md            # This file
-```
-
-## Quick Start
-
-Requirements:
-- Python 3.x
-- Tkinter (included with standard Python)
-
-Run the GUI (PowerShell):
-```powershell
-python "v:\Ceasar-Cipher-Project\gui.py"
-```
-
-## Usage
-
-See `GUI_README.md` for detailed instructions on:
-- Key formats for each cipher
-- Example inputs and outputs
-- Troubleshooting tips
-
-## Developer Notes
-
-- Each cipher is implemented as a separate module with `encrypt()` and `decrypt()` functions
-- All implementations are pure Python with no external dependencies
-- Type hints and docstrings included for better code understanding
-- Error handling for invalid keys and inputs
-
-## Contributing
-
-Feel free to:
-- Add new cipher implementations to the `ciphers` package
-- Improve existing cipher implementations
-- Enhance the GUI with new features
